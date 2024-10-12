@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Covid Stats</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <main class="app-container">
+      <header class="header">
+        <h1 class="title">Covid Stats</h1>
+      </header>
+      <section class="search">
+        <h3 class="count" id="count">Coutries ( 0 )</h3>
+        <section class="right">
+          <label for="search-field">Search:</label>
+          <input
+            type="text"
+            id="search-field"
+            class="search-field"
+            autocomplete="off"
+          />
+        </section>
+      </section>
+      <section class="table">
+        <table>
+          <thead>
+            <tr>
+              <th>
+                <div>
+                  <span>Country</span>
+                  <div class="sorters">
+                    <i class="fa-solid fa-sort-up" id="country-desc"></i>
+                    <i class="fa-solid fa-sort-down" id="country-asc"></i>
+                  </div>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Confirmed</span>
+                  <div class="sorters">
+                    <i class="fa-solid fa-sort-up" id="confirmed-desc"></i>
+                    <i class="fa-solid fa-sort-down" id="confirmed-asc"></i>
+                  </div>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Active</span>
+                  <div class="sorters">
+                    <i class="fa-solid fa-sort-up" id="active-desc"></i>
+                    <i class="fa-solid fa-sort-down" id="active-asc"></i>
+                  </div>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Recovered</span>
+                  <div class="sorters">
+                    <i class="fa-solid fa-sort-up" id="recovered-desc"></i>
+                    <i class="fa-solid fa-sort-down" id="recovered-asc"></i>
+                  </div>
+                </div>
+              </th>
+              <th>
+                <div>
+                  <span>Deaths</span>
+                  <div class="sorters">
+                    <i class="fa-solid fa-sort-up" id="deaths-desc"></i>
+                    <i class="fa-solid fa-sort-down" id="deaths-asc"></i>
+                  </div>
+                </div>
+              </th>
+            </tr>
+          </thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </section>
+    </main>
+  </body>
+</html>
